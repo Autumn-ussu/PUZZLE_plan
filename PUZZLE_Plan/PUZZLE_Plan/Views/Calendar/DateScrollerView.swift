@@ -13,25 +13,27 @@ struct DateScrollerView: View {
     var body: some View {
         HStack{
             Text(CalendarHelper().monthYearString(dateHolder.date))
-                .font(.title)
+                .fontWeight(.semibold)
+                .font(.system(size: 16))
                 .bold()
                 .animation(.none)
-                .frame(maxWidth: .infinity)
-            Spacer()
+                .frame(maxWidth: 310, alignment: .leading)
             Button(action: previousMonth)
             {
-                Image(systemName: "arrow.left")
+                Image("ic_arrow_left_line")
                     .imageScale(.small)
                     .font(Font.title.weight(.semibold))
+                    .foregroundColor(Color.black)
             }
             Button(action: nextMonth)
             {
-                Image(systemName: "arrow.right")
+                Image("ic_arrow_right_line")
                     .imageScale(.small)
                     .font(Font.title.weight(.semibold))
+                    .foregroundColor(Color.black)
             }
-            Spacer()
         }
+        .frame(maxWidth: 310, alignment: .leading)
     }
 
     func previousMonth()
