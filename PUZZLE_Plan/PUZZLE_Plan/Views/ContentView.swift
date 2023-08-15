@@ -23,8 +23,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-
-            Text("Another Tab")
+            PlanPageView()
                 .tabItem {
                     if selection == 1 {
                         Image("ic_plan_selected")
@@ -33,7 +32,6 @@ struct ContentView: View {
                     }
                 }
                 .tag(1)
-
             Text("The Last Tab")
                 .tabItem {
                     if selection == 2 {

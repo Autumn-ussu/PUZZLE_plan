@@ -19,15 +19,15 @@ struct CalendarView: View {
                     .font(.system(size: 22))
                     .fontWeight(.bold)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-
                 Text("종원님의 8월엔")
                     .font(.system(size: 22))
                 Text("어떤 모양의 조각들이 있나요?")
                     .font(.system(size: 22))
+
             }
             .overlay(){
                 Image("im_puzzle_01")
-                    .padding(EdgeInsets(top: 35, leading: 73, bottom: 0, trailing:     0))
+                    .padding(EdgeInsets(top: 35, leading: 73, bottom: 0, trailing: 0))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(EdgeInsets(top: 0, leading: 24, bottom: 16, trailing: 0))
