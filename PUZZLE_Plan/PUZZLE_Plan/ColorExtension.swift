@@ -10,6 +10,7 @@ import SwiftUI
 extension Color {
     static let bgNormal = Color(hex: "#F6F6F6")
     static let buttonPoint = Color(hex: "#FF7E62")
+    static let progressPoint = Color(hex: "#FF6602")
 }
 
 extension Color {

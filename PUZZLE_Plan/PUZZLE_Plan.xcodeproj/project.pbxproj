@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6B18A1F82A7A3447005A27E0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B18A1F72A7A3447005A27E0 /* ColorExtension.swift */; };
+		6B2A9D342A8E02280028FE22 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A9D332A8E02280028FE22 /* CircularProgressView.swift */; };
+		6B6DBCFE2A8CAA1C000990F1 /* PlanCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DBCFD2A8CAA1C000990F1 /* PlanCollectionView.swift */; };
+		6B6DBD002A8CAB1E000990F1 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DBCFF2A8CAB1E000990F1 /* Collection.swift */; };
+		6B6DBD022A8CF872000990F1 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DBD012A8CF872000990F1 /* Plan.swift */; };
+		6B6DBD052A8CF989000990F1 /* PlanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DBD042A8CF989000990F1 /* PlanAPI.swift */; };
+		6B6DBD092A8CFB3F000990F1 /* PlanContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DBD082A8CFB3F000990F1 /* PlanContentView.swift */; };
 		6BF903652A80E0A300E4BC79 /* PlanPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF903642A80E0A300E4BC79 /* PlanPageView.swift */; };
 		6BFB61A22A779B3200ED7F85 /* PUZZLE_PlanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB61A12A779B3200ED7F85 /* PUZZLE_PlanApp.swift */; };
 		6BFB61A42A779B3200ED7F85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB61A32A779B3200ED7F85 /* ContentView.swift */; };
@@ -23,6 +29,12 @@
 
 /* Begin PBXFileReference section */
 		6B18A1F72A7A3447005A27E0 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		6B2A9D332A8E02280028FE22 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		6B6DBCFD2A8CAA1C000990F1 /* PlanCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCollectionView.swift; sourceTree = "<group>"; };
+		6B6DBCFF2A8CAB1E000990F1 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		6B6DBD012A8CF872000990F1 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		6B6DBD042A8CF989000990F1 /* PlanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAPI.swift; sourceTree = "<group>"; };
+		6B6DBD082A8CFB3F000990F1 /* PlanContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanContentView.swift; sourceTree = "<group>"; };
 		6BF903642A80E0A300E4BC79 /* PlanPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPageView.swift; sourceTree = "<group>"; };
 		6BFB619E2A779B3200ED7F85 /* PUZZLE_Plan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUZZLE_Plan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFB61A12A779B3200ED7F85 /* PUZZLE_PlanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUZZLE_PlanApp.swift; sourceTree = "<group>"; };
@@ -52,14 +64,25 @@
 			isa = PBXGroup;
 			children = (
 				6BFB61BA2A791E4B00ED7F85 /* CalendarHelper.swift */,
+				6B2A9D332A8E02280028FE22 /* CircularProgressView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6B6DBD032A8CF979000990F1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6B6DBD042A8CF989000990F1 /* PlanAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		6BF903632A80E07F00E4BC79 /* Plan */ = {
 			isa = PBXGroup;
 			children = (
 				6BF903642A80E0A300E4BC79 /* PlanPageView.swift */,
+				6B6DBCFD2A8CAA1C000990F1 /* PlanCollectionView.swift */,
+				6B6DBD082A8CFB3F000990F1 /* PlanContentView.swift */,
 			);
 			path = Plan;
 			sourceTree = "<group>";
@@ -84,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				6BFB61A12A779B3200ED7F85 /* PUZZLE_PlanApp.swift */,
+				6B6DBD032A8CF979000990F1 /* API */,
 				6BFB61B02A779C7C00ED7F85 /* Model */,
 				6BFB61AF2A779C7400ED7F85 /* Views */,
 				6BFB61A52A779B3700ED7F85 /* Assets.xcassets */,
@@ -116,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				6BFB61B62A791C5C00ED7F85 /* DateHolder.swift */,
+				6B6DBCFF2A8CAB1E000990F1 /* Collection.swift */,
+				6B6DBD012A8CF872000990F1 /* Plan.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,15 +227,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6DBD092A8CFB3F000990F1 /* PlanContentView.swift in Sources */,
 				6BFB61A42A779B3200ED7F85 /* ContentView.swift in Sources */,
 				6BFB61A22A779B3200ED7F85 /* PUZZLE_PlanApp.swift in Sources */,
 				6BFB61B92A791D4D00ED7F85 /* DateScrollerView.swift in Sources */,
+				6B6DBD002A8CAB1E000990F1 /* Collection.swift in Sources */,
+				6B6DBD022A8CF872000990F1 /* Plan.swift in Sources */,
 				6BFB61B72A791C5D00ED7F85 /* DateHolder.swift in Sources */,
 				6BF903652A80E0A300E4BC79 /* PlanPageView.swift in Sources */,
 				6BFB61BB2A791E4B00ED7F85 /* CalendarHelper.swift in Sources */,
 				6BFB61BF2A79310C00ED7F85 /* MonthStruct.swift in Sources */,
+				6B2A9D342A8E02280028FE22 /* CircularProgressView.swift in Sources */,
 				6BFB61B52A77A63500ED7F85 /* CalendarView.swift in Sources */,
 				6BFB61BD2A792D2000ED7F85 /* CalendarCell.swift in Sources */,
+				6B6DBD052A8CF989000990F1 /* PlanAPI.swift in Sources */,
+				6B6DBCFE2A8CAA1C000990F1 /* PlanCollectionView.swift in Sources */,
 				6B18A1F82A7A3447005A27E0 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
